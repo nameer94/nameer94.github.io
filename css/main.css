@@ -1,0 +1,558 @@
+html{
+    background: #000;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(127deg, rgba(221,39,90,0.48), rgba(12,85,185,0.48), rgba(221,39,90,0.48));
+    overflow-x: hidden;
+    background-position: center;
+}
+.body_anime{
+    animation-name: body;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.anime0, .anime1, .anime2, .anime2v, .anime3, .anime3v, .anime4{
+    position: relative;
+}
+@keyframes anime0in{
+    from{right: -200px; opacity: 0}
+    to{right: 0px; opacity: 1}
+}
+@keyframes anime0out{
+    from{right: 0px; opacity: 1}
+    to{right: -200px; opacity: 0}
+}
+.anime0in_anime{
+    animation-name: anime0in;
+    animation-fill-mode: forwards;
+}
+.anime0out_anime{
+    animation-name: anime0out;
+    animation-fill-mode: forwards;
+}
+@keyframes anime2in{
+    from{left: -200px; opacity: 0}
+    to{left: 0px; opacity: 1}
+}
+@keyframes anime2out{
+    from{left: 0px; opacity: 1}
+    to{left: -200px; opacity: 0}
+}
+.anime2in_anime{
+    animation-name: anime2in;
+    animation-fill-mode: forwards;
+}
+.anime2out_anime{
+    animation-name: anime2out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anime1in{
+    from{top: -200px; opacity: 0}
+    to{top: 0px; opacity: 1}
+}
+@keyframes anime1out{
+    from{top: 0px; opacity: 1}
+    to: {top: -200px; opacity: 0}
+}
+
+.anime1in_anime{
+    animation-name: anime1in;
+    animation-fill-mode: forwards;
+}
+.anime1out_anime{
+    animation-name: anime1out;
+    animation-fill-mode: forwards;
+}
+
+.logo{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 65px;
+}
+
+.nav{
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    z-index: 9999;
+}
+@keyframes navbtn{
+    from{border: 2px solid #da2659;}
+    to{border: 2px solid rgba(0,0,0,0.2);}
+}
+.nav_btn{
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #da2659;
+    box-shadow: 0px 0px 1px 1px #000 inset;
+    animation-name: navbtn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.nav_btn > span{
+    display: inline-block;
+    font-size: 8pt;
+    color: #da2659;
+    font-weight: 700;
+    opacity: 0;
+    position: relative;
+    bottom: 6px;
+    right: 4px;
+    transition: all 300ms;
+}
+.nav_btn, .nav_btn > span{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.nav_btn:hover, .nav_btn_active{
+    border: 2px solid #da2659 !important;
+    padding: 10px;
+}
+.nav_btn:hover > span, .nav_btn_active > span{
+    opacity: 1;
+}
+
+.nav_menu{
+    position: absolute;
+    right: -100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 85px;
+    z-index: 999;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    visibility: hidden;
+}
+.nav_menu > span{
+    display: inline-block;
+    margin: 20px 0px;
+}
+.nav_menu a{
+    transform: rotate(90deg);
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: all 500ms;
+    cursor: pointer;
+}
+.nav_menu:hover a{
+    opacity: 0.5;
+}
+.nav_menu a:hover{
+    opacity: 1;
+}
+@keyframes menuin{
+    from{right: -100px; opacity: 0; visibility: hidden;}
+    to{right: 0px; opacity: 1; visibility: visible;}
+}
+.menu_animein{
+    z-index: 9998;
+    animation-name: menuin;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes menuout{
+    from{right: 0px; opacity: 1; visibility: visible;}
+    to{right: -100px; opacity: 0; visibility: hidden;}
+}
+.menu_animeout{
+    animation-name: menuout;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.social{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    direction: rtl;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.social > img{
+    width: 25px;
+    height: 25px;
+}
+.social > a{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    font-size: 10pt;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+    transition: all 300ms;
+    margin-right: 5px;
+}
+.social > a:hover{
+    top: -10px;
+}
+
+.fp-tableCell{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 150px 50px 50px;
+    flex: 1;
+}
+
+@keyframes icon1{
+    from{bottom: 0px}
+    to{bottom: 20px}
+}
+@keyframes icon2{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(90deg)}
+}
+@keyframes icon3{
+    from{transform: scale(0.9)}
+    to{transform: rotate(1)}
+}
+.icons{
+    text-align: center;
+    flex: 1;
+}
+.icons > img:first-child{
+    width: 230px;
+    margin-right: 30px;
+    position: relative;
+    animation-name: icon1;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.icons > img{
+    width: 150px;
+    animation-name: icon2;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.icons > img:last-child{
+    width: 300px;
+    margin-top: -130px;
+    animation-name: icon3;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.home_info{
+    direction: rtl;
+    color: #fff;
+    flex: 1;
+}
+.page{
+    flex: 1;
+}
+.home_info > h1{
+    color: #da2659;
+    font-size: 22pt;
+    margin-bottom: -10px;
+    line-height: 27px;
+}
+.page > h1{
+    font-size: 16pt;
+}
+.home_info > pre{
+    font-family: inherit;
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+    font-size: 16pt;
+    font-weight: 200;
+    line-height: 25px;
+}
+.page > pre{
+    font-weight: 300;
+}
+.home_info > pre > span{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+#anime1 > .page_info{
+    flex-basis: 200px;
+}
+#anime1 > .col:first-child{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider, .slider1{
+    width: 900px;
+    flex: 1;
+}
+.slider .slick-slide{
+    opacity: 0.5;
+    transition: all 500ms;
+    filter: grayscale(100);
+    transform: scale(0.7);
+}
+.slider .slick-center{
+    opacity: 1;
+    transition: all 500ms;
+    filter: grayscale(0);
+    transform: scale(1);
+    position: relative;
+    z-index: 999;
+}
+.slider1 .slick-slide > div{
+    text-align: center;
+    font-size: 22pt;
+    color: #da2659;
+    opacity: 1;
+}
+.slider img{
+    width: 300px;
+    height: 400px;
+}
+
+.page_info{
+    flex-basis: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  white-space: nowrap;
+}
+.page_title, .page_title_sh{
+    transform: rotate(90deg);
+    font-size: 55pt;
+    font-weight: 600;
+    position: relative;
+    z-index: 999;
+}
+.page_title > div:first-child{
+  background: -webkit-linear-gradient(-90deg,#f05157 40%, #5261ac 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin-bottom: -50px;
+}
+.page_title > div:last-child{
+  background: -webkit-linear-gradient(-90deg,#f05157 40%, #5261ac 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin-left: 70px;
+    font-size: 40pt;
+}
+.page_title_sh{
+    position: absolute;
+    text-shadow: 6px 0px 2px #000;
+    z-index: 99;
+}
+.page_title_sh > div:first-child{
+    margin-bottom: -50px;
+}
+.page_title_sh > div:last-child{
+    margin-left: 70px;
+    font-size: 40pt;
+}
+
+.skills_div{
+    display: flex;
+    justify-content: center;
+}
+.skills_div > .col{
+    flex: 1;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+.user > div{
+    direction: rtl;
+    margin-right: 10px;
+}
+.user > div > div:first-child{
+    color: #dd265a;
+    font-weight: 700;
+    font-size: 15pt;
+}
+.user > div > div:last-child{
+    color: #fff;
+    font-weight: 300;
+    font-size: 13pt;
+}
+.user > div:last-child{
+    display: flex;
+    justify-content: center;
+    width: 85px;
+}
+.lines{
+    width: 0px;
+    height: 100px;
+    border: 1px dashed #fff;
+    margin-top: 10px;
+    position: relative;
+    z-index: 99;
+}
+.skills_div > .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.skills > div > span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+.skills > div > span:last-child{
+    font-size: 10pt;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.skills > div > div{
+    width: 120px;
+    height: 10px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px 3px rgba(255,255,255, 0.1);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.skills > div > div > div{
+  background-image: -moz-linear-gradient( -176deg, rgb(240,81,87) 1%, rgb(161,89,130) 55%, rgb(82,97,172) 82%);
+  background-image: -webkit-linear-gradient( -176deg, rgb(240,81,87) 1%, rgb(161,89,130) 55%, rgb(82,97,172) 82%);
+  background-image: -ms-linear-gradient( -176deg, rgb(240,81,87) 1%, rgb(161,89,130) 55%, rgb(82,97,172) 82%);
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    width: 0px;
+}
+@keyframes bars{
+    from{width: 0px;}
+    to{width: 100%;}
+}
+.bar_anime{
+    animation-name: bars;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.skills_list{
+    transform: rotate(90deg);
+    width: 170px;
+    border-left: 1px dashed #fff;
+    margin: auto;
+    padding-left: 10px;
+    margin-top: 0px;
+}
+.skills_list > div{
+    color: #fff;
+    font-weight: 600;
+    font-size: 12pt;
+}
+#anime3 > .page_info{
+    flex-basis: 200px;
+}
+
+.about_icon{
+    width: 100%;
+}
+.about_info{
+    text-align: center;
+}
+.about_info > h1{
+    font-weight: bold;
+    color: #ffdd00;
+    font-size: 28pt;
+    text-decoration: underline;
+}
+.about_info > div{
+    color: #40bdff;
+    font-size: 18pt;
+}
+.about_info > ul{
+    list-style: none;
+    font-size: 18pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_info li{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: #ffdd00;
+    font-weight: bold;
+}
+.about_info li:last-child{
+    text-decoration: none;
+}
+.about_info > ul i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    font-size: 14pt;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.about_info ul a{
+    text-decoration: none;
+}
