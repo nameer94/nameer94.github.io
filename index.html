@@ -1,28 +1,408 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MyMAL Privacy Policy</title>
-	<style type="text/css">
-		body{
-			font-family: arial
-		}
-	</style>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
-<h1>MyMAL Privacy Policy</h1>
-<p>
-By using MyMAL the app may store data from you, please read the following before using the app.
-</p>
-<h3>What data is collected from me?</h3>
-<p>The app uses your myanimelist.net account to deliver the content for you.</p>
-<p>The username and password is used to login to your account, the app uses WebView (something like a browser in the app) to login through myanimelist.net main login page to deliver more secure way of storing your data.</p>
-<h3>Why I need to share my data with the app?</h3>
-<p>The data is used to improve the experiant of MyMAL.</p>
-<ul>
-	<li>Manage your anime or manga list.</li>
-	<li>Find what you looking for, and many of myanimelist.net services..</li>
-</ul>
-<p>The data is stored in a secure way and will never be shared or sold to any third party.</p>
-<p>For more information about myanimelist.net privacy policy please read: <a href="https://myanimelist.net/about/privacy_policy">myanimelist.net privacy policy</a></p>
+
+<img src="img/logo.png" class="logo">
+
+<div class="nav">
+	<span class="nav_btn" id="nav_btn" onclick="show_menu()"><span>MENU</span></span>
+</div>
+<div class="nav_menu" id="menu">
+	<span>
+		<a onclick="$.fn.fullpage.moveTo(1);show_menu()">الرئيسية</a>
+	</span>
+	<span>
+		<a onclick="$.fn.fullpage.moveTo(2);show_menu()">الاعمال</a>
+	</span>
+	<span>
+		<a onclick="$.fn.fullpage.moveTo(3);show_menu()">من نحن</a>
+	</span>
+    <span>
+        <a onclick="$.fn.fullpage.moveTo(4);show_menu()">المهارات</a>
+    </span>
+	<span>
+		<a onclick="$.fn.fullpage.moveTo(5);show_menu()">اتصل بنا</a>
+	</span>
+</span>
+</div>
+
+<div class="social">
+    <img src="img/social.png">
+    <a href=""><i class="fas fa-phone"></i></a>
+    <a href=""><i class="fab fa-facebook-f"></i></a>
+    <a href=""><i class="fab fa-twitter"></i></a>
+    <a href=""><i class="fab fa-instagram"></i></a>
+</div>
+
+<div id="fullpage">
+    <div class="section">
+        	<div class="container" id="anime0">
+        		<div class="col">
+        			<div class="icons">
+	        			<img src="img/icon1.png">
+	        			<img src="img/icon2.png">
+	        			<div></div>
+	        			<img src="img/icon3.png">
+	        		</div>
+        		</div>
+        		<div class="col home_info">
+        			<h1 class="anime0 anime0in_anime" style="animation-duration: 0.8s;">شباب كرييتف</h1>
+        			<pre class="anime0 anime0in_anime" style="animation-duration: 1s;">
+الشباب يقدمولك خدمات برمجة وتصميم وكرفكس متكاملة 
+يكدرون يبنولك <span>مواقع الكترونية</span> ،<span>انضمة ادارة</span> 
+<span>تطبيقات موبايل</span> ، <span>تصميم</span> ، <span>مونتاج</span> ، <span>اعلانات</span>
+-----------------------------------------
+الشباب يشتغلون باحدث وافضل الآدوات ولغات البرمجة وبتصميم راقي ب تجربة مستخدم وواجهة مستخدم اكثر من رائعة
+        			</pre>
+        		</div>
+        	</div>
+</div>
+
+<div class="section">
+            <div class="container" id="anime1">
+                <div class="col">
+                    <div class="slider">
+                        <!-- Slides -->
+                        <div><img src="img/proj1.jpg"></div>
+                        <div><img src="img/proj2.png"></div>
+                        <div><img src="img/proj3.png"></div>
+                        <div><img src="img/proj4.jpg"></div>
+                    </div>
+                    <div class="slider1">
+                        <!-- Slides -->
+                        <div><div>موقع لمنظمة</div></div>
+                        <div><div>برنامج ادارة مبيعات</div></div>
+                        <div><div>برنامج ادارة لعيادة دكتور</div></div>
+                        <div><div>احترافية CV قوالب</div></div>
+                    </div>
+                </div>
+                <div class="col page_info">
+                    <div class="page_title">
+                        <div class="anime1" style="animation-duration: 1s">اعمالنا</div>
+                        <div class="anime1" style="animation-duration: 0.8s">Our Work</div>
+                    </div>
+                    <div class="page_title_sh">
+                        <div class="anime1" style="animation-duration: 1s">اعمالنا</div>
+                        <div class="anime1" style="animation-duration: 0.8s">Our Work</div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<div class="section">
+        	<div class="container" id="anime2">
+        		<div class="col home_info page">
+        			<div class="anime2v" style="animation-duration: 0.8s" style="text-align: center;">“الشباب اسسوا استوديو متكامل لخدمات التصميم والبرمجة والمونتاج“</div>
+        			<h1 class="anime2v" style="animation-duration: 0.8s">هدف الشباب : انه يوفرولك خدمات متكاملة حتى تطور بمجال شغلك سواء كان شركة او منضمة او محل او مشروع شخصي. </h1>
+        			<pre class="anime2v" style="animation-duration: 1s">
+<span>امكانيات الشباب كالتالي</span> 
+انشاء المواقع بمختلف انواعها واستضافتها
+عمل متاجر الكترونية للصفحات التجارية والشركات وغيرها 
+برامج ادارة للمحلات والمطاعم ...الخ
+عمل تطبيقات لل سمارت فون
+عمل مشاريع التخرج و تنفيذ المشاريع والافكار الشخصية  
+تصميم شعارات
+تصميم اعلانات و واجهات محلات
+مونتاج بمختلف انواعه
+عمل تصاميم جاهزه او برتوتايب حسب الطلب 
+        			</pre>
+        			<div class="anime2v" style="animation-duration: 0.8s" style="text-align: center; font-weight: 300; text-decoration: underline;">بشكل عام احنه حاضرين لاي نوع مشروع او فكرة تحب تنفذها</div>
+        		</div>
+                <div class="col page_info">
+                    <div class="page_title">
+                        <div class="anime2" style="animation-duration: 1s">من نحن</div>
+                        <div class="anime2" style="animation-duration: 0.8s">Who are we</div>
+                    </div>
+                    <div class="page_title_sh">
+                        <div class="anime2" style="animation-duration: 1s">من نحن</div>
+                        <div class="anime2" style="animation-duration: 0.8s">Who are we</div>
+                    </div>
+                </div>
+        	</div>
+</div>
+
+<div class="section">
+            <div class="container" id="anime3">
+                <div class="col page">
+                    <div class="skills_div">
+                        <div class="col">
+                            <div class="user" style="position: relative; z-index: 9999;">
+                                <div>
+                                    <div>احمد عواد</div>
+                                    <div>Web Designer</div>
+                                </div>
+                                <img src="img/user1.jpg">
+                            </div>
+                            <div class="user">
+                                <div style="visibility: hidden;">
+                                    <div>احمد عواد</div>
+                                    <div>Web Designer</div>
+                                </div>
+                                <div class="anime3" style="animation-duration: 0.8s"><div class="lines"></div></div>
+                            </div>
+                            <div class="skills">
+                                <div>
+                                    <span>Web Design</span>
+                                    <div><div style="max-width: 93%;" class="bar"></div></div>
+                                    <span>93%</span>
+                                </div>
+                                <div>
+                                    <span>User Experience</span>
+                                    <div><div style="max-width: 88%;" class="bar"></div></div>
+                                    <span>88%</span>
+                                </div>
+                                <div>
+                                    <span>User Interface</span>
+                                    <div><div style="max-width: 90%;" class="bar"></div></div>
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                            <div class="skills_list">
+                                <div class="anime3v" style="animation-duration: 0.6s;">Photoshop</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">Landing Page</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">Home Page</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">UI - User Interface</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">UX - User Experience</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">Social Media</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="user" style="position: relative; z-index: 9999;">
+                                <div>
+                                    <div>نمير احمد</div>
+                                    <div>Web Developer</div>
+                                </div>
+                                <img src="img/user2.jpg">
+                            </div>
+                            <div class="user">
+                                <div style="visibility: hidden;">
+                                    <div>نمير احمد</div>
+                                    <div>Web Developer</div>
+                                </div>
+                                <div class="anime3" style="animation-duration: 0.8s"><div class="lines"></div></div>
+                            </div>
+                            <div class="skills">
+                                <div>
+                                    <span>Web</span>
+                                    <div><div style="max-width: 98%;" class="bar"></div></div>
+                                    <span>98%</span>
+                                </div>
+                                <div>
+                                    <span>OS App</span>
+                                    <div><div style="max-width: 85%;" class="bar"></div></div>
+                                    <span>85%</span>
+                                </div>
+                                <div>
+                                    <span>Phone App</span>
+                                    <div><div style="max-width: 80%;" class="bar"></div></div>
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <div class="skills_list">
+                                <div class="anime3v" style="animation-duration: 0.6s;">HTML 5</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">CSS 3</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">PHP</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">JavaScript</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">DataBase (SQL)</div>
+                                <div class="anime3v" style="animation-duration: 0.6s;">Security</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col page_info">
+                    <div class="page_title">
+                        <div class="anime3" style="animation-duration: 1s">المهارات</div>
+                        <div class="anime3" style="animation-duration: 0.8s">SKILL SET</div>
+                    </div>
+                    <div class="page_title_sh">
+                        <div class="anime3" style="animation-duration: 1s">المهارات</div>
+                        <div class="anime3" style="animation-duration: 0.8s">SKILL SET</div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+    <div class="section">
+    <div class="container" id="anime4">
+        <div class="col">
+            <img src="img/icon4.png" class="about_icon">
+        </div>
+        <div class="col about_info">
+            <h1>الشباب يلبون طلبك</h1>
+            <div>
+    دزلنا طلبك مهما كان وراح يتم الرد عليك بأسرع وقت من قبل الشباب
+            </div>
+            <ul>
+                <li>info@shbabcreative.com</li>
+                <li>name@email.com</li>
+                <li>07713093798</li>
+                <li>07702022445</li>
+                <a href=""><li><i class="fab fa-facebook-f"></i> ShababCreative</li></a>
+            </ul>
+        </div>
+        <div class="col page_info">
+            <div class="page_title">
+                <div class="anime4" style="animation-duration: 1s">اتصل بنا</div>
+                <div class="anime4" style="animation-duration: 0.8s">call us</div>
+            </div>
+            <div class="page_title_sh">
+                <div class="anime4" style="animation-duration: 1s">اتصل بنا</div>
+                <div class="anime4" style="animation-duration: 0.8s">call us</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        responsiveWidth: 1022,
+
+        onLeave: function(index, nextIndex, direction){
+            var leavingSection = $(this);
+
+            if(nextIndex == 1){
+                var bars = document.getElementsByClassName('anime0');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime0 anime0in_anime';
+                }
+            }else{
+                var bars = document.getElementsByClassName('anime0');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime0 anime0out_anime';
+                }
+            }
+            if(nextIndex == 2){
+                var bars = document.getElementsByClassName('anime1');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime1 anime1in_anime';
+                }
+            }else{
+                var bars = document.getElementsByClassName('anime1');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime1 anime1out_anime';
+                }
+            }
+            if(nextIndex == 3){
+                var bars = document.getElementsByClassName('anime2');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime2 anime1in_anime';
+                }
+                var bars = document.getElementsByClassName('anime2v');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime2v anime2in_anime';
+                }
+            }else{
+                var bars = document.getElementsByClassName('anime2');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime2 anime1out_anime';
+                }
+                var bars = document.getElementsByClassName('anime2v');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime2v anime2out_anime';
+                }
+            }
+            if(nextIndex == 4){
+                var bars = document.getElementsByClassName('anime3');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime3 anime1in_anime';
+                }
+                var bars = document.getElementsByClassName('anime3v');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime3v anime0in_anime';
+                }
+                var bars = document.getElementsByClassName('bar');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'bar bar_anime';
+                }
+            }else{
+                var bars = document.getElementsByClassName('anime3');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime3 anime1out_anime';
+                }
+                var bars = document.getElementsByClassName('anime3v');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime3v anime0out_anime';
+                }
+                var bars = document.getElementsByClassName('bar');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'bar';
+                }
+            }
+            if(nextIndex == 5){
+                var bars = document.getElementsByClassName('anime4');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime4 anime1in_anime';
+                }
+            }else{
+                var bars = document.getElementsByClassName('anime4');
+                for (var i = 0; i < bars.length; i++) {
+                    bars[i].className = 'anime4 anime1out_anime';
+                }
+            }
+
+        }
+    });
+
+    $('.slider').slick({
+      infinite: true,
+      centerMode: true,
+      centerPadding: '10px',
+      slidesToShow: 3,
+      arrows: false,
+      autoplay: true,
+      focusOnSelect: true,
+      asNavFor: '.slider1',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            //slidesToShow: 1
+          }
+        }
+      ]
+    });
+    $('.slider1').slick({
+      infinite: true,
+      slidesToShow: 1,
+      arrows: false,
+      autoplay: true,
+      asNavFor: '.slider'
+    });
+});
+
+var menu = false;
+function show_menu(btn) {
+	if (menu == false) {
+        document.getElementById('nav_btn').className = 'nav_btn nav_btn_active';
+		document.getElementById('menu').className = 'nav_menu menu_animein';
+		menu = true;
+	}else{
+        document.getElementById('nav_btn').className = 'nav_btn';
+		document.getElementById('menu').className = 'nav_menu menu_animeout';
+		menu = false;
+	}
+}
+</script>
 </body>
 </html>
